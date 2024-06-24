@@ -1,6 +1,16 @@
+import Categories from "@/components/Categories"
+import LoadMore from "@/components/LoadMore"
+import ProjectCard from "@/components/ProjectCard"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <section className="flexStart flex-col paddings mb-16">
+      <Categories/>
+      <section className="projects-grid">
+        <ProjectCard/>
+      </section>
+      <LoadMore/>
+    </section>
   )
 }
 
